@@ -11,3 +11,14 @@ exports.getUserInfo = (req, res) => {
     res.json(userInfo);
   };
   
+
+
+  exports.genrateUserInfo = (req, res)  =>{
+    const SignleUserInfo = {
+        id: 1,
+        name: "Ronit",
+        role: "Developer"
+    }
+
+    res.json(SignleUserInfo);
+  }
