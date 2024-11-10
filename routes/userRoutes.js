@@ -4,6 +4,6 @@ const userController = require('../controllers/userContoller');
 
 // Define a route to return user data in JSON format
 router.get('/info', userController.getUserInfo);
-router.get('/genrateInfo', userController.genrateUserInfo)
+router.post('/genrateInfo', userController.generateUserInfo)
 
 module.exports = router;

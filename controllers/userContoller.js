@@ -13,12 +13,14 @@ exports.getUserInfo = (req, res) => {
   
 
 
-  exports.genrateUserInfo = (req, res)  =>{
-    const SignleUserInfo = {
+exports.generateUserInfo = (req, res) =>{
+    const {name, role } = req.body;
+
+    const SingleUserInfo  = {
         id: 1,
-        name: "Ronit",
-        role: "Developer"
+        name: name  || "Default user",
+        role: role || "Default Role"
     }
 
-    res.json(SignleUserInfo);
-  }
+    res.json(SingleUserInfo)
+}
